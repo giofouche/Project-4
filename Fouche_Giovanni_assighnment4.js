@@ -15,4 +15,19 @@
 				};
 				checkNum("123-456-7890");
                                 
- 
+ /*STRING
+2. Is the string a URL? (Does it start with http: or https:?)
+*/
+		function checkUrl(url){
+		var sites = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/; 
+		// regEx verifies the if the string is a http: or https:
+			if(url.match(sites)){
+				goodUrl = "Your url is valid."; //if it does have http: or https: in the url, it will print true.
+				return goodUrl;
+				}else { 
+					badUrl = "Your url is not valid.";//if it doesn't have http: or https: in the url, it prints false.
+				return badUrl;
+				}
+			};
+				var validUrl = checkUrl("https://www.facebook.com");	
+					console.log(validUrl);	
