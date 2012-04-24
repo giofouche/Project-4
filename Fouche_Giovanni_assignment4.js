@@ -22,7 +22,7 @@
 */
 		function checkUrl(url){
 		var sites = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/; 
-		// regEx verifies the if the string is a http: or https:
+		// regEx verifies if the string is a http: or https:
 			if(url.match(sites)){
 				goodUrl = "valid url"; //if it does have http: or https: in the url, it will print true.
 				return goodUrl;
@@ -43,4 +43,14 @@ Title-case a string (split into words, then uppercase the first letter of each w
 	function(letter) {
     return letter.toUpperCase();
 	});
-	console.log(words); 
+	console.log(words);
+	
+
+/*NUMBER
+ Format a number to use a specific number of decimal places as for money: 2.1--->2.10.
+*/
+			function amount(total){
+				var myCost = total.toFixed(2);
+				return myCost;
+				};
+			console.log("$" + amount(2.1));
