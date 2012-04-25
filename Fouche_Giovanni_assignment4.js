@@ -54,3 +54,14 @@ Title-case a string (split into words, then uppercase the first letter of each w
 				return myCost;
 				};
 			console.log("$" + amount(2.1));
+			
+/*NUMBER
+Given a string version of a number such as "42", return the values as an actual Number, such as 42.
+*/
+	var num = "42",
+		number = function(){
+			aNum = parseInt(num);
+		return num;
+		}
+	console.log("My number is " + number());
+
