@@ -64,4 +64,20 @@ Given a string version of a number such as "42", return the values as an actual 
 		return num;
 		}
 	console.log("My number is " + number());
+	
+/*ARRAY
+Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects:
+	"a" + [{a:2}, {a:3}, {a:1}]
+	--> [{a:1}, {a:2}, {a:3}].
+	(array.sort)*/
+
+			var aNum = [
+				 {a:2},
+				 {a:3}, 
+				 {a:1},
+			]
+			aNum.sort(function(a,b){
+			return a.a-b.a;
+			})
+			console.log(aNum);
 
