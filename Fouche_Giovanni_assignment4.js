@@ -99,3 +99,17 @@ console.log(givenString + "," + " /" + newSeparator);
 };
 separatedStrings();
 
+/* Number
+  Fuzzy-match a number: is the number above or below a number within a certain percent?
+*/
+
+function fuzzyMath () {
+	var myNumber = 25;
+	var numAbove = 25*1.5;
+	var numBelow = 25/2
+
+console.log("50% above " + myNumber + " is " + numAbove + " and 50% below " + myNumber + " is " + numBelow + ".");
+
+};
+fuzzyMath();
+
