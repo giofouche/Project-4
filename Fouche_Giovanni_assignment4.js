@@ -80,4 +80,22 @@ Given an array of objects and the name of a key, return the array sorted by the 
 			return a.a-b.a;
 			})
 			console.log(aNum);
+			
+			
+/*Adding the remaning six problems past this point
+
+String
+
+Given a string that is a list of things separated by a given string, as well as another string separator, 
+return a string with the first separator changed to the second: "a,b,c" + "," + "/" ? "a/b/c".*/
+
+function separatedStrings () {
+	var givenString = "First, Second, Third";
+	var separatorToReplace = /,/;
+	var newSeparator = givenString.replace(separatorToReplace, "/");
+
+console.log(givenString + "," + " /" + newSeparator);
+
+};
+separatedStrings();
 
