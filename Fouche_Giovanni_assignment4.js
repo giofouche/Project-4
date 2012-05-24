@@ -113,3 +113,22 @@ console.log("50% above " + myNumber + " is " + numAbove + " and 50% below " + my
 };
 fuzzyMath();
 
+
+/*Number
+ Find the number of hours or days difference between two dates.
+*/
+
+function dayDifference () {
+	var mins = 1000*60;
+    var hours = mins*60;
+    var days = hours*24;
+	var firstDate = new Date ("07/14/1991");
+	var secondDate = new Date ("05/24/2012");
+	var difference = Math.round((secondDate - firstDate)/days)
+
+console.log("The number of days difference between " + firstDate + " and " + secondDate + " is " + difference + ".");
+
+};
+dayDifference();
+
+
