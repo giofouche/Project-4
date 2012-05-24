@@ -99,6 +99,22 @@ console.log(givenString + "," + " /" + newSeparator);
 };
 separatedStrings();
 
+//Does a string follow an aaa@bbb.ccc pattern like an email address?
+
+function emailAddress () {
+	var email = "testemail@testemail.com"
+
+if (email !== "aaa@bbb.ccc") {
+
+	console.log("My email address is " + email + ".");
+
+} else {
+
+	console.log("I'm sorry, but I do not have an email address");
+	}
+};
+emailAddress();
+
 /* Number
   Fuzzy-match a number: is the number above or below a number within a certain percent?
 */
