@@ -148,3 +148,34 @@ console.log("The number of days difference between " + firstDate + " and " + sec
 dayDifference();
 
 
+/*Array
+
+Find the smallest value in an array that is greater than a given number*/
+
+function numValues () {
+	var myNumber = 5;
+	var smallerNumber = Math.min(10, 15, 20);
+
+console.log(smallerNumber + " is the smallest value in the array but greater than " + myNumber + ".");
+
+};
+numValues();
+
+
+/*Array
+ Find the total value of just the numbers in an array, even if some of the items are not numbers.*/
+
+function arrayValues () {
+	var mixedArray = [
+		"String",
+		1,
+		2,
+		"String2"
+		];
+	var newNumArray = mixedArray.slice(1,3);
+
+console.log(newNumArray);
+
+};
+arrayValues();
+
